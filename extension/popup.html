@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Realtime Fraud Detector</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div id="app">
+    <h3>Realtime Fraud</h3>
+
+    <label for="card_id">Card ID (opt.)</label>
+    <input id="card_id" placeholder="card_12345" />
+
+    <label for="features">Transaction features (JSON)</label>
+    <textarea id="features" rows="8" placeholder='{"amt":100.0,"zip":12345,"lat":12.34,"long":56.78}'></textarea>
+
+    <div class="btn-row">
+      <button id="sendBtn">Send (WebSocket)</button>
+      <button id="restBtn">Send (REST fallback)</button>
+    </div>
+
+    <div id="status" class="muted">Status: idle</div>
+
+    <div id="resultBox" class="result hidden">
+      <h4>Result</h4>
+      <pre id="resultText">—</pre>
+    </div>
+
+    <hr/>
+    <small class="muted">Backend:</small>
+    <select id="endpointSelect">
+      <option value="ws://127.0.0.1:8000/ws/fraud">Local WS (dev)</option>
+      <option value="http://127.0.0.1:8000/predict">Local REST</option>
+    </select>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+# -------------------------
+# Python cache / build files
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.py.class
+
+# -------------------------
+# Environment folders
+# -------------------------
+.venv/
+env/
+venv/
+ENV/
+.conda/
+*.env
+*.venv
+.Python
+
+# -------------------------
+# IDE & Editor settings
+# -------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------
+# OS-specific junk
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Jupyter notebooks
+# -------------------------
+.ipynb_checkpoints/
+*.ipynb
+
+# -------------------------
+# Logs & temp files
+# -------------------------
+*.log
+logs/
+*.tmp
+*.swp
+*.bak
+
+# -------------------------
+# Compiled / distribution files
+# -------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# -------------------------
+# Models & artifacts
+# -------------------------
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+models/
+output/
+
+# -------------------------
+# Kaggle / datasets
+# -------------------------
+*.csv
+*.json
+*.xlsx
+data/
+dataset/
+datasets/
+
+# -------------------------
+# FastAPI / Uvicorn stuff
+# -------------------------
+*.sqlite3
+*.db
+*.db-journal
+
+# -------------------------
+# Browser extension generated files
+# -------------------------
+*.crx
+*.pem
+*.zip
+
+# -------------------------
+# Node modules (if used for extension UI)
+# -------------------------
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# -------------------------
+# Redis dump (if used)
+# -------------------------
+dump.rdb
+
+# -------------------------
+# Cache & temporary folders
+# -------------------------
+.cache/
+__pypackages__/
+.pytest_cache/
+.coverage
+htmlcov/
+covhtml/
+*.cover
+*.coverage
+
+# -------------------------
+# Render specific files (optional)
+# -------------------------
+.render-build/
