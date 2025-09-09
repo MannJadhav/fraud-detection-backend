@@ -46,9 +46,11 @@ print(f"✅ Loaded models successfully — {len(FEATURE_COLS)} features.")
 app = FastAPI(title="Real-Time Credit Card Fraud Detection")
 
 # Allow all origins for local testing (tighten in production)
+from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
